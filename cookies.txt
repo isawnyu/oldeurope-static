@@ -1,0 +1,4 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+.isaw.nyu.edu	TRUE	/	FALSE	1999999999	SESSfc73bcdcb70dcf3628c63b9f4f4baa73	ldp11tv0jmp1vu0gcb4hkssv52
+
