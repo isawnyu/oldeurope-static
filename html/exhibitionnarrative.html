@@ -226,16 +226,19 @@
 	 
       <script type="text/javascript" language="JavaScript">
 			function loadmain(nid)
-
 			{
-					$.get('mainimgtext'+nid+'.html',function(d){
-						document.getElementById("exh_narr_leftcontent1").innerHTML = d;
-						//$("span.fadein").fadeIn('slow');	
-						initImage();
-			      });
-
-			}
-			  				
+				$.get('mainimgtext'+nid+'.html',function(d){
+					document.getElementById("exh_narr_leftcontent1").innerHTML = d;
+					//$("span.fadein").fadeIn('slow');	
+					initImage();
+		      	});
+				$.get('comment'+nid+'.html',function(f){
+					document.getElementById("commentcontent").innerHTML = f;
+				});
+				$.get('./sites/all/themes/isaw/addcommenthref.php?nid='+nid,function(g){
+					document.getElementById("commentheaderleft").innerHTML = g;
+		      	});
+			}	  				
 
 function initImage() {
 
