@@ -1,0 +1,305 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<!--<link href="main.css" type="text/css" rel="stylesheet">-->
+<title>Burning Questions | ISAW</title>
+<link type="text/css" rel="stylesheet" media="all" href="/exhibitions/oldeurope/modules/aggregator/aggregator.css?5" />
+<link type="text/css" rel="stylesheet" media="all" href="/exhibitions/oldeurope/modules/node/node.css?5" />
+<link type="text/css" rel="stylesheet" media="all" href="/exhibitions/oldeurope/modules/system/defaults.css?5" />
+<link type="text/css" rel="stylesheet" media="all" href="/exhibitions/oldeurope/modules/system/system.css?5" />
+<link type="text/css" rel="stylesheet" media="all" href="/exhibitions/oldeurope/modules/system/system-menus.css?5" />
+<link type="text/css" rel="stylesheet" media="all" href="/exhibitions/oldeurope/modules/user/user.css?5" />
+<link type="text/css" rel="stylesheet" media="all" href="/exhibitions/oldeurope/sites/all/themes/isaw/style.css?5" />
+<script src="./sites/all/themes/isaw/jquery.js" type="text/javascript" language="JavaScript"></script>
+
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<div id='outerbox' >
+	<div id='main' >
+		<div id='header' style="!height:113px;">
+			<a href="./"><img alt='The Lost World of Old Europe: The Danube Valley 5000-3500 BC. First US Exhibition, November 11th 2009 - April 25th 2010' src='./images/header_image1.jpg' ></img></a>
+</div><div style="!height:113px;">
+			<a href="/"><img alt='ISAW logo' src='./images/header_image2.jpg' ></img></a>
+		</div>
+	
+<div id="topNav">
+    <ul>
+        <li id="aboutExhib" onmouseover="showmenu();" onmouseout="delay();"><a href="./introduction.html">about the exhibition</a>
+        	<ul id="aboutExibit" onmouseover="showmenu();" onmouseout="delay();"> 
+              <li id="introduction" ><a href="./introduction.html">introduction</a></li> 
+              <li id="exhibitNarrative" ><a href="./exhibitionnarrative.html">exhibition narrative</a></li>
+              <li id="objChecklist" ><a href="./objectchecklist.html">object checklist</a></li>
+              <li id="meetDirector" ><a href="./associatedirector.html">meet the associate director</a></li>
+              <li id="meetCurator" ><a href="./guestcurator.html">meet the guest curator</a></li>
+              <li id="faqs"><a href="./fabq.html">FA(B)Qs</a></li>
+            </ul> 
+        </li>
+        <li id="exhibCatalg"><a href="./exhibitioncatalogue.html">exhibition catalogue</a></li>
+        <li id="publicPgms"><a href="./publicprograms.html">public programs / education</a></li>
+        <li id="resources"><a href="./resources.html">resources</a></li>
+        <li id="prevExib"><a href="./previousexhibitions.html">previous exhibitions</a></li>
+        <li id="aboutISAW" onmouseover="showmenui();" onmouseout="delayi();"><a href="./isaw.html">about ISAW</a>
+        	<ul id="isaw" onmouseover="showmenui();" onmouseout="delayi();"> 
+              <li id="ISAW"><a href="./isaw.html">ISAW</a></li> 
+              <li id="facilities"><a href="./facilities.html">facilities</a></li> 
+            </ul> 
+        </li>
+        <li id="contact"><a href="./contact.html">contact / sign up</a></li>
+        <li id="location"><a href="./location.html">location / hours / directions</a></li>
+    </ul>
+    <div class="clear"></div>
+</div>
+ <script type="text/javascript">    
+ 	var t;
+	function showmenu(){
+		clearTimeout(t);
+		var state=document.getElementById("aboutExhib");
+		state.setAttribute("style", "background-position:bottom");
+		document.getElementById("aboutExhib").style.backgroundPosition='bottom'; /*Extra for IE7*/
+		var substate=document.getElementById("aboutExibit");
+		substate.setAttribute("style", "display:block;");	
+		document.getElementById("aboutExibit").style.display='block';	
+	}
+	function delay(){
+		showmenu();
+		t=setTimeout("clear()",3000);
+	}
+	function clear(){
+		var state=document.getElementById("aboutExhib");
+		state.setAttribute("style", "background-position:top");
+		document.getElementById("aboutExhib").style.backgroundPosition='top';	
+		var substate=document.getElementById("aboutExibit");
+		substate.setAttribute("style", "display:none;");			
+		 document.getElementById("aboutExibit").style.display='none';		
+	}
+
+
+	function showmenui(){
+		clearTimeout(t);
+		var state=document.getElementById("aboutISAW");
+		state.setAttribute("style", "background-position:bottom");
+		document.getElementById("aboutISAW").style.backgroundPosition='bottom';		
+		var substate=document.getElementById("isaw");
+		substate.setAttribute("style", "display:block;");	
+		document.getElementById("isaw").style.display='block';			
+	
+	}
+	function delayi(){
+		showmenui();
+		t=setTimeout("cleari()",500);
+	}
+	function cleari(){
+		var state=document.getElementById("aboutISAW");
+		state.setAttribute("style", "background-position:top");
+		document.getElementById("aboutISAW").style.backgroundPosition='top';			
+		var substate=document.getElementById("isaw");
+		substate.setAttribute("style", "display:none;");		
+		document.getElementById("isaw").style.display='none';				
+	}
+	
+	if (document.location=="./isaw.html")
+	{
+		var state=document.getElementById("aboutISAW");
+		state.setAttribute("style", "background-position:bottom");
+		document.getElementById("aboutISAW").style.backgroundPosition='bottom';			
+		var substate=document.getElementById("ISAW");
+		substate.setAttribute("style", "background-position:bottom");
+		document.getElementById("ISAW").style.backgroundPosition='bottom';		
+		
+	}
+	if (document.location=="./facilities.html")
+	{
+		var state=document.getElementById("aboutISAW");
+		state.setAttribute("style", "background-position:bottom");
+		document.getElementById("aboutISAW").style.backgroundPosition='bottom';			
+		var substate=document.getElementById("facilities");
+		substate.setAttribute("style", "background-position:bottom");
+		document.getElementById("facilities").style.backgroundPosition='bottom';	
+			
+	}
+	if (document.location=="./introduction.html")
+	{
+		var state=document.getElementById("aboutExhib");
+		state.setAttribute("style", "background-position:bottom");
+		document.getElementById("aboutExhib").style.backgroundPosition='bottom';			
+		var substate=document.getElementById("introduction");
+		substate.setAttribute("style", "background-position:bottom");
+		document.getElementById("introduction").style.backgroundPosition='bottom';			
+	}
+	if (document.location=="./associatedirector.html")
+	{
+		var state=document.getElementById("aboutExhib");
+		state.setAttribute("style", "background-position:bottom");
+		document.getElementById("aboutExhib").style.backgroundPosition='bottom';			
+		var substate=document.getElementById("meetDirector");
+		substate.setAttribute("style", "background-position:bottom");
+		document.getElementById("meetDirector").style.backgroundPosition='bottom';			
+	}
+	if (document.location=="./guestcurator.html")
+	{
+		var state=document.getElementById("aboutExhib");
+		state.setAttribute("style", "background-position:bottom");
+		document.getElementById("aboutExhib").style.backgroundPosition='bottom';			
+		var substate=document.getElementById("meetCurator");
+		substate.setAttribute("style", "background-position:bottom");
+		document.getElementById("meetCurator").style.backgroundPosition='bottom';			
+	}
+	
+	//11/8/09 HJS need to account for other items being shown on their own pages.
+	var docloc="'"+document.location+"'";
+	//if (document.location=="./exhibitionnarrative_273.html")
+	if (docloc.search(/exhibitionnarrative/i)!=-1)
+	{
+		var state=document.getElementById("aboutExhib");
+		state.setAttribute("style", "background-position:bottom");
+		document.getElementById("aboutExhib").style.backgroundPosition='bottom';			
+		var substate=document.getElementById("exhibitNarrative");
+		substate.setAttribute("style", "background-position:bottom");
+		document.getElementById("exhibitNarrative").style.backgroundPosition='bottom';			
+	}
+	if (document.location=="./objectchecklist.html")
+	{
+		var state=document.getElementById("aboutExhib");
+		state.setAttribute("style", "background-position:bottom");
+		document.getElementById("aboutExhib").style.backgroundPosition='bottom';			
+		var substate=document.getElementById("objChecklist");
+		substate.setAttribute("style", "background-position:bottom");
+		document.getElementById("objChecklist").style.backgroundPosition='bottom';			
+	}
+	if (document.location=="./fabq.html")
+	{
+		var state=document.getElementById("aboutExhib");
+		state.setAttribute("style", "background-position:bottom");
+		document.getElementById("aboutExhib").style.backgroundPosition='bottom';			
+		var substate=document.getElementById("faqs");
+		substate.setAttribute("style", "background-position:bottom");
+		document.getElementById("faqs").style.backgroundPosition='bottom';			
+	}
+	if (document.location=="./exhibitioncatalogue.html")
+	{
+		var state=document.getElementById("exhibCatalg");
+		document.getElementById("exhibCatalg").style.backgroundPosition='bottom';
+		state.setAttribute("style", "background-position:bottom");
+		document.getElementById("exhibCatalg").style.backgroundPosition='bottom';			
+	}
+	if (document.location=="./publicprograms.html")
+	{
+		var state=document.getElementById("publicPgms");
+		state.setAttribute("style", "background-position:bottom");
+		document.getElementById("publicPgms").style.backgroundPosition='bottom';			
+	}
+	if (document.location=="./resources.html")
+	{
+		var state=document.getElementById("resources");
+		state.setAttribute("style", "background-position:bottom");
+		document.getElementById("resources").style.backgroundPosition='bottom';			
+	}
+	if (document.location=="./previousexhibitions.html")
+	{
+		var state=document.getElementById("prevExib");
+		state.setAttribute("style", "background-position:bottom");
+			document.getElementById("prevExib").style.backgroundPosition='bottom';			
+	}
+	if (document.location=="./contact.html")
+	{
+		var state=document.getElementById("contact");
+		state.setAttribute("style", "background-position:bottom");
+			document.getElementById("contact").style.backgroundPosition='bottom';			
+	}
+	if (document.location=="./location.html")
+	{
+		var state=document.getElementById("location");
+		state.setAttribute("style", "background-position:bottom");
+				document.getElementById("location").style.backgroundPosition='bottom';			
+	}
+
+                         
+
+	 </script>  
+	 
+		<div id='content'>
+		 	<br />
+			<img style='padding-bottom:5px;' src='./images/burning_question_1.jpg'></img>
+			<br />
+			<br />
+			
+			<div class='contentrow'>
+				<div class='contentrow_left'>
+					<div class='imag_left'><img width='90' src='./sites/default/files/images/female2.jpg'></img></div>
+					<div class='imag_brief'>
+						<div class='imag_title_img'><img src='./images/burnin_img_top_left_title.gif'></img></div>
+						<div class='imag_brief_text'>
+<p>Female Figurine <br />  Fired Clay <br /> Cucuteni, Dr?gu?eni, 4050&ndash;3900 <span style="font-size: smaller; ">BC</span> <br />  Boto?ani County Museum, Boto?ani: 7558 <br /> Photo: Marius Amarie</p>						
+						</div>
+					</div>
+					<div class='imag_full_text'>
+<p>Female figurines predominate in Old European material culture. They can be found represented individually as well as in large groups, and in contexts identified as domestic, ritual, religious, and funerary. The proliferation of female imagery throughout the fifth and fourth millennia BC has prompted some scholars to interpret Old European culture as a peaceful world where female-centered goddess worship prevailed. Males, according to this theory, played a largely secondary role in society. Some scholars, however, consider this argument idealized&mdash;in fact many villages were fortified, weapons were buried with men, and adult males had the richest graves in cemeteries.</p>		
+					</div>
+				</div>						
+						
+				
+				
+				<div class='contentrow_right'>					<div class='imag_right'><img width='90' src='./sites/default/files/images/thinker.jpg'></img></div>
+					<div class='imag_brief'>
+						<div class='imag_title_img'><img src='./images/burnin_img_bot_left_title.gif'></img></div>
+						<div class='imag_brief_text'>
+<p>&ldquo;The Thinker&rdquo; from Cernavod?, Male Figurine <br />  Fired Clay <br /> Hamangia, Cernavod?, 5000&ndash;4600 <span style="font-size: smaller; ">BC</span><br />  National History Museum of Romania, Bucharest: 15906 <br /> Photo: Marius Amarie</p>						
+						</div>
+					</div>
+					<div class='imag_full_text'>
+<p>One of the most famous figurines from Old Europe&mdash;&ldquo;The Thinker&rdquo;&mdash;represents a male seated on a low stool with his hands placed against his cheeks. The overall composition is frequently remarked upon for its affinities to modern art, and calls to mind the works of Picasso, Modigliani, and Brancusi. His unusual pose may have been meant to suggest a pensive state, but his precise thoughts, and even the meaning of his gesture, remain a matter of debate. It is important to note that the figurine&rsquo;s final context was in a Hamangia grave, suggesting the possibility of a funerary significance. Is he lost in thought, or is he perhaps shown in mourning?</p>					</div>
+				</div>
+			
+			</div>
+			
+			<div style='clear:both;'><br /><br /></div>
+			
+			<div class='contentrow'>
+				<div class='contentrow_left'>					<div class='imag_left'><img width='90' src='./sites/default/files/images/ArchitecturalModel.jpg'></img></div>
+					<div class='imag_brief'>
+						<div class='imag_title_img'><img src='./images/burnin_img_top_right_title.gif'></img></div>
+						<div class='imag_brief_text'>
+<p>Architectural Model <br /> Fired Clay  Gumelni?a, <br />C?scioarele, 4600&ndash;3900 <span style="font-size: smaller; ">BC</span> <br /> National History Museum <br />of Romania, Bucharest: 12156 <br /> Photo: Marius Amarie</p>										
+						</div>
+					</div>
+					<div class='imag_full_text'>
+<p><br />Archaeologists have long known that the houses in many Old European settlements were burned, but they attributed the frequent fires to warfare or natural accidents&mdash;the latter were probably a common occurrence in villages composed of thatched-roof homes. However, experimental fires set in modern replicas of Old European dwellings failed to produce the intense heat that is evident in the vitrified clay plaster of many archaeological houses. These modern experiments have convinced a number of scholars that certain Copper Age homes were filled with fuel and intentionally set ablaze. Fire is a purifying force, and was sacred in many ancient religions. In tell settlements, new houses were built on top of the leveled ruins of old burned houses, and it is possible that dwellings were destroyed by fire following the death of a revered elder or after a certain number of generations.&nbsp;</p>					</div>
+				</div>
+				
+				
+				<div class='contentrow_right'>					<div class='imag_right'><img width='90' src='./sites/default/files/images/arrowheads.jpg'></img></div>
+					<div class='imag_brief'>
+						<div class='imag_title_img'><img src='./images/burnin_img_bot_right_title.gif'></img></div>
+						<div class='imag_brief_text'>
+<div>Flint,&nbsp;Indo-European, <br />Casimcea, 4000 <small>BC</small></div><div>National History Museum of Romania, Bucharest:</div><div>Photo: Marius Amarie</div>					
+						</div>
+					</div>
+					
+					<div class='imag_full_text'><br />
+<p>About 4300&ndash;4100 BC all of the known tell settlements in the lower Danube valley and eastern Bulgaria were burned and abandoned. Although Old European traditions survived and even thrived in the western and northern periphery of Old Europe, the tell settlements that had been occupied almost continuously for up to 2,000 years became silent mounds where sheep grazed. Marija Gimbutas of UCLA described the end of Old Europe as a war of the genders, in which patriarchal, horse-riding, Indo-European-speaking nomadic herders invaded from the arid steppes of southern Ukraine to destroy a peaceful world where females had been worshipped in Mother-Goddess cults. This idealized picture of Old Europe has not stood up to new archaeological evidence, but an alternate explanation is not yet widely accepted. It was probably a combination of declining agricultural yields, climate change, and conflict over resources, in addition to the arrival of immigrants from the steppes, that brought an end to Old Europe.</p>					</div>
+				</div>
+			
+			</div>
+			
+						
+		</div>
+		
+		<div style='clear:both;'><br /><br /><br /><a style='font-size:0.75em;color:#603813;' href='./fabq.html'>Frequently Asked (Burning) Questions about the exhibition</a><br /><br /><br /><br /></div>
+		
+						
+		<div id=footer'>
+<div><img src='./images/footer.jpg'></img></div>
+
+		
+		</div>
+		
+		<br />
+		
+	</div>
+</div>
+<script type="text/javascript"> var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www."); document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E")); </script> <script type="text/javascript"> try { var pageTracker = _gat._getTracker("UA-3702316-4"); pageTracker._trackPageview(); } catch(err) {}</script></body>
+</body>
+</html>
