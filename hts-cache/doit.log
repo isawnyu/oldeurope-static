@@ -1,8 +1,0 @@
-http://isaw.nyu.edu/exhibitions/oldeurope/home.html -N1005 -#p -D -%v -w -c16 -s0 -v -O old-europe-captured +isaw.nyu.edu/exhibitions/oldeurope/*
-File generated automatically on Wed, 17 Dec 2014 05:03:13, do NOT edit
-
-To update a mirror, just launch httrack without any parameters
-The existing cache will be used (and modified)
-To have other options, retype all parameters and launch HTTrack
-To continue an interrupted mirror, just launch httrack without any parameters
-
